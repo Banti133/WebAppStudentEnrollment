@@ -16,5 +16,6 @@ namespace WebApStudentEnrolment.Data
             base.OnModelCreating(modelBuilder);
             // Additional configuration can be added here if needed
         }
+
     }
 }

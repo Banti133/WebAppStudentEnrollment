@@ -7,11 +7,11 @@ namespace WebApStudentEnrolment.Repositories
     {
         int Count { get; }
         // Task<IActionResult> AddEnrolment(int enrolmentId, int studentId, int courseId, DateTime enrolmentDate);
-        Task<IActionResult> AddEnrolment(Enrolment enrolment);
-        Task<IActionResult> GetEnrolmentById(int enrolmentId);
-        Task<IActionResult> GetAllEnrolments();
-        Task<IActionResult> UpdateEnrolment(int enrolmentId);
-        Task<IActionResult> DeleteEnrolment(int enrolmentId);
+        Task<Enrolment> AddEnrolment(Enrolment enrolment);
+        Task<Enrolment> GetEnrolmentById(int enrolmentId);
+        Task<IEnumerable<Enrolment>> GetAllEnrolments();
+        Task<Enrolment> UpdateEnrolment(int enrolmentId, Enrolment enrolment);
+        Task<Enrolment> DeleteEnrolment(int enrolmentId);
 
 
 
